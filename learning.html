@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRADEPRO1 | M-PESA Withdrawal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="TRADEPRO1 home">
+          <span class="brand-mark">T</span>
+          <span>TRADEPRO1</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="deposit.html">M-PESA Deposit</a>
+          <a href="withdrawal.html" class="active">M-PESA Withdrawal</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+          <a href="dashboard.html" class="nav-btn">Log In</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container page-header">
+        <p class="eyebrow">Payments</p>
+        <h1>M-PESA Withdrawal</h1>
+      </div>
+
+      <div class="container dashboard-grid form-grid">
+        <section class="card form-panel">
+          <div class="section-title-row">
+            <h2>Withdrawal Request</h2>
+            <span class="tag real-tag">Verified users only</span>
+          </div>
+
+          <form class="styled-form" action="#" method="get">
+            <div class="field-grid">
+              <label>
+                Withdrawal amount (KES)
+                <input type="number" value="25000" />
+              </label>
+              <label>
+                M-PESA number
+                <input type="tel" placeholder="+254 700 000 000" />
+              </label>
+              <label>
+                Account balance
+                <input type="text" value="KES 120,000.00" readonly />
+              </label>
+              <label>
+                Withdrawal reason
+                <input type="text" placeholder="Funds transfer" />
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit Withdrawal</button>
+          </form>
+        </section>
+
+        <aside class="card side-panel">
+          <div class="section-title-row">
+            <h2>Withdrawal controls</h2>
+          </div>
+
+          <div class="info-stack">
+            <div class="status-box warning">
+              <strong>Identity verification</strong>
+              <p>Withdrawals are processed only after customer identity and account checks are completed.</p>
+            </div>
+            <div class="status-box neutral">
+              <strong>Security review</strong>
+              <p>Payment requests are reviewed for fraud prevention, suspicious activity, and regulatory compliance.</p>
+            </div>
+            <div class="status-box neutral">
+              <strong>Status tracking</strong>
+              <p>Customers can monitor request status and view processing updates in the transaction history.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">T</span>
+            <span>TRADEPRO1</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <p>© <span id="year"></span> TRADEPRO1. Demo-only prototype.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

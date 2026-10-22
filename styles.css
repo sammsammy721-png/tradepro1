@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRADEPRO1 | Contact & Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="TRADEPRO1 home">
+          <span class="brand-mark">T</span>
+          <span>TRADEPRO1</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="deposit.html">M-PESA Deposit</a>
+          <a href="withdrawal.html">M-PESA Withdrawal</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html" class="active">Support</a>
+          <a href="dashboard.html" class="nav-btn">Log In</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container page-header">
+        <p class="eyebrow">Support</p>
+        <h1>Contact & Support</h1>
+      </div>
+
+      <div class="container dashboard-grid form-grid">
+        <section class="card form-panel">
+          <div class="section-title-row">
+            <h2>Send us a message</h2>
+          </div>
+
+          <form class="styled-form" action="#" method="get">
+            <div class="field-grid">
+              <label>
+                Full name
+                <input type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Email address
+                <input type="email" placeholder="name@example.com" />
+              </label>
+              <label>
+                Subject
+                <input type="text" placeholder="Account help" />
+              </label>
+              <label>
+                Platform policy
+                <select>
+                  <option>General enquiry</option>
+                  <option>Support question</option>
+                  <option>Demo account</option>
+                  <option>Real account</option>
+                  <option>M-PESA help</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea rows="5" placeholder="Tell us how we can help you."></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Submit Request</button>
+          </form>
+        </section>
+
+        <aside class="card side-panel">
+          <div class="section-title-row">
+            <h2>FAQ</h2>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>Is TRADEPRO1 a real-money trading platform?</summary>
+              <p>Not yet. The current version is a free demo prototype for learning and education.</p>
+            </details>
+            <details>
+              <summary>Can I deposit or withdraw real money?</summary>
+              <p>No. Real customer funds are not accepted until compliant broker and payment integrations are in place.</p>
+            </details>
+            <details>
+              <summary>Do you support M-PESA?</summary>
+              <p>The project includes planned M-PESA deposit and withdrawal flows, but these require secure approval and integration.</p>
+            </details>
+            <details>
+              <summary>How do I open a demo account?</summary>
+              <p>Use the demo account option in the home page and choose the account setup flow to access simulated funds.</p>
+            </details>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">T</span>
+            <span>TRADEPRO1</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <p>© <span id="year"></span> TRADEPRO1. Demo-only prototype.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

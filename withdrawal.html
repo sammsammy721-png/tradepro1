@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRADEPRO1 | M-PESA Deposit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="TRADEPRO1 home">
+          <span class="brand-mark">T</span>
+          <span>TRADEPRO1</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="deposit.html" class="active">M-PESA Deposit</a>
+          <a href="withdrawal.html">M-PESA Withdrawal</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+          <a href="dashboard.html" class="nav-btn">Log In</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container page-header">
+        <p class="eyebrow">Payments</p>
+        <h1>M-PESA Deposit</h1>
+      </div>
+
+      <div class="container dashboard-grid form-grid">
+        <section class="card form-panel">
+          <div class="section-title-row">
+            <h2>Deposit Request</h2>
+            <span class="tag real-tag">Secure flow</span>
+          </div>
+
+          <form class="styled-form" action="#" method="get">
+            <div class="field-grid">
+              <label>
+                Deposit amount (KES)
+                <input type="number" value="15000" />
+              </label>
+              <label>
+                M-PESA phone number
+                <input type="tel" placeholder="+254 700 000 000" />
+              </label>
+              <label>
+                Account type
+                <select>
+                  <option>Real account</option>
+                  <option>Demo account</option>
+                </select>
+              </label>
+              <label>
+                Reference / note
+                <input type="text" placeholder="Optional reference" />
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Request Deposit</button>
+          </form>
+        </section>
+
+        <aside class="card side-panel">
+          <div class="section-title-row">
+            <h2>Deposit process</h2>
+          </div>
+
+          <div class="info-stack">
+            <div class="status-box neutral">
+              <strong>1. Submit request</strong>
+              <p>Customers submit the deposit amount and M-PESA number for verification by the platform team.</p>
+            </div>
+            <div class="status-box neutral">
+              <strong>2. Confirm payment</strong>
+              <p>Approved payment provider or broker integration verifies the transaction before crediting the account.</p>
+            </div>
+            <div class="status-box neutral">
+              <strong>3. Account credit</strong>
+              <p>Customer accounts are only credited after secure confirmation and compliance checks.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">T</span>
+            <span>TRADEPRO1</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <p>© <span id="year"></span> TRADEPRO1. Demo-only prototype.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRADEPRO1 | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="TRADEPRO1 home">
+          <span class="brand-mark">T</span>
+          <span>TRADEPRO1</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="deposit.html">M-PESA Deposit</a>
+          <a href="withdrawal.html">M-PESA Withdrawal</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+          <a href="dashboard.html" class="nav-btn active">Log In</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container page-header">
+        <p class="eyebrow">Account center</p>
+        <h1>Dashboard</h1>
+      </div>
+
+      <div class="container dashboard-grid">
+        <section class="card account-card">
+          <div class="section-title-row">
+            <h2>Account Summary</h2>
+            <span class="tag real-tag">Verified</span>
+          </div>
+
+          <div class="summary-grid dashboard-summary">
+            <div>
+              <label>Account Type</label>
+              <strong>Real Demo</strong>
+            </div>
+            <div>
+              <label>Balance</label>
+              <strong>$100,000</strong>
+            </div>
+            <div>
+              <label>Trading History</label>
+              <strong>24 trades</strong>
+            </div>
+            <div>
+              <label>Transactions</label>
+              <strong>18 records</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="card account-card">
+          <div class="section-title-row">
+            <h2>Profile & Settings</h2>
+          </div>
+
+          <ul class="profile-list">
+            <li><span>Name</span><strong>Jane Njeri</strong></li>
+            <li><span>Country</span><strong>Kenya</strong></li>
+            <li><span>Verification</span><strong>Pending review</strong></li>
+            <li><span>Preferred Pair</span><strong>EUR/USD</strong></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container dashboard-grid trades-layout">
+        <section class="card positions-panel">
+          <div class="section-title-row">
+            <h2>Trading History</h2>
+          </div>
+
+          <div class="trade-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Pair</th>
+                  <th>Direction</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12 Jun</td>
+                  <td>EUR/USD</td>
+                  <td>Buy</td>
+                  <td class="positive">+$240.00</td>
+                </tr>
+                <tr>
+                  <td>10 Jun</td>
+                  <td>GBP/USD</td>
+                  <td>Sell</td>
+                  <td class="positive">+$410.00</td>
+                </tr>
+                <tr>
+                  <td>08 Jun</td>
+                  <td>USD/JPY</td>
+                  <td>Buy</td>
+                  <td class="negative">-$150.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="card positions-panel">
+          <div class="section-title-row">
+            <h2>Transaction Records</h2>
+          </div>
+
+          <div class="record-list">
+            <div class="record-item">
+              <strong>Demo Credit</strong>
+              <span>$10,000.00</span>
+              <small>Approved</small>
+            </div>
+            <div class="record-item">
+              <strong>Trade Profit</strong>
+              <span>$240.00</span>
+              <small>Settled</small>
+            </div>
+            <div class="record-item">
+              <strong>Withdrawal Request</strong>
+              <span>$0.00</span>
+              <small>Not applicable</small>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">T</span>
+            <span>TRADEPRO1</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="demo-account.html">Demo Account</a>
+          <a href="real-account.html">Real Account</a>
+          <a href="learning.html">Learning</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <p>© <span id="year"></span> TRADEPRO1. Demo-only prototype.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
